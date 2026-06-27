@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Complexity Visualizer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <h1>Time Complexity Visualizer</h1>
+
+    <label>Enter value of n:</label>
+
+    <input type="range" id="nValue" min="1" max="100" value="10">
+
+    <span id="displayValue">10</span>
+
+    <br><br>
+
+    <canvas id="myChart"></canvas>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
